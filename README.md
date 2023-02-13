@@ -18,5 +18,5 @@ python3.8 a2part2.py --test --text_path x_test.txt --model_path model.pt --outpu
 
 The following command calculates the accuracy of the language identification model, where out.txt is the output file of your code and y_test.txt is the actual language id of x_test.txt
 ```
-python3.8 eval.py out.txt y_test.txt You are provided with the scoring code eval.py.
+python3.8 eval.py out.txt y_test.txt
 ```
