@@ -11,13 +11,14 @@ Command to train your neural network using this training set. The command for tr
 python3.8 a2part2.py --train --text_path x_train.txt --label_path y_train.txt --model_path model.pt
 ```
 
-The file model.pt is the output of the training process that contains the model weight from training as well as other information that you need to save for testing.
-You are also supplied with a test set (x_test.txt). The command to test on this test file and generate an output file out.txt is:
+The file model.pt is the output of the training process that contains the model weight from training.
+
+The command to test on this test file (x_test.txt) and generate an output file out.txt is:
 ```
 python3.8 a2part2.py --test --text_path x_test.txt --model_path model.pt --output_path out.txt
 ```
-Your output file out.txt must contain the language ID in the same format as the y_train.txt file.
-The following command calculates the accuracy of your language identification model, where out.txt is the output file of your code and y_test.txt is the actual language id of x_test.txt
+
+The following command calculates the accuracy of the language identification model, where out.txt is the output file of your code and y_test.txt is the actual language id of x_test.txt
 ```
 python3.8 eval.py out.txt y_test.txt You are provided with the scoring code eval.py.
 ```
